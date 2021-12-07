@@ -40,17 +40,33 @@ function App() {
 
   return (
     <View style={{ marginHorizontal: 40, marginVertical: 60 }}>
-      <Text style={{ fontWeight: "bold", fontSize: 24, marginBottom: 30 }}>
+      <Text
+        style={{
+          textAlign: "center",
+          fontWeight: "bold",
+          fontSize: 50,
+          color: "darkred",
+          marginBottom: 30,
+          fontStyle: "italic",
+        }}
+      >
         ! Bored
       </Text>
 
-      <Text style={{ fontWeight: "bold", fontSize: 24, marginBottom: 30 }}>
+      <Text
+        style={{
+          fontWeight: "bold",
+          fontSize: 24,
+          marginBottom: 30,
+          marginTop: 70,
+        }}
+      >
         I'm bored ...
       </Text>
       {appLoading && (
         <ActivityIndicator
           size="large"
-          color="#c1262c"
+          color="#0000ff"
           style={{ marginBottom: 30 }}
         />
       )}
@@ -64,7 +80,16 @@ function App() {
         </View>
       ) : (
         <View>
-          <Text style={{ fontWeight: "bold", fontSize: 24, marginBottom: 30 }}>
+          <Text
+            style={{
+              fontWeight: "bold",
+              color: "red",
+              fontSize: 24,
+              marginBottom: 30,
+              marginTop: 50,
+              textAlign: "center",
+            }}
+          >
             {resActivity}
           </Text>
 
